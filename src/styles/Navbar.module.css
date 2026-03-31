@@ -1,5 +1,24 @@
 .Navbar {
     background-color: var(--background);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: large;
+    font-family: var(--font-geist-sans);
+
+
+}
+
+.Link {
+    background-color: #1a1a1a;
+    border: 1px solid #4d4d4d;
+    border-radius: 1cap;
+    padding: 0.5em;
+    margin: 1cap;
+}
+
+.Link:hover {
+    background-color: #313131;
+    border: 1px solid #adadad;
 }
