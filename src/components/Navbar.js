@@ -13,11 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export default function Navbar({children}) {
+    
     return (
         <>
         <nav className={`${styles.Navbar} ${geistMono.variable} ${geistSans.variable}`}>
-            <Link href="/ListItems" className={styles.Link}>List Items</Link>
+            
             <Link href="/" className={styles.Link}>Homepage</Link>
+            <Link href="/ListItems" className={styles.Link}>List Items</Link>
+            
         </nav>
         {children}
         </>
