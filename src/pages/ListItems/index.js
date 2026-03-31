@@ -1,5 +1,5 @@
+import List from "@/components/List";
 import Head from "next/head";
-import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 
@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export default function Home() {
+export default function ListItems() {
   return (
     <>
       <Head>
@@ -25,8 +25,8 @@ export default function Home() {
       <div className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}>
         <main className={styles.main}>
           <div className={styles.intro}>
-            <h1>Welcome!</h1>
-            <p>This is the homepage of the assignment.</p>
+            <h1>List Items</h1>
+            <p>This is a page displaying the use of list items.</p>
           </div>
         </main>
       </div>
