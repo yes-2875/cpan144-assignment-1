@@ -26,7 +26,7 @@ export default function CounterPage() {
       <div className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}>
         <main className={styles.main}>
           <div className={styles.intro}>
-            <h1>List Items</h1>
+            <h1>Counter</h1>
             <p>This is a page displaying the use of a stateful counter component, along with conditional rendering usage.</p>
             <Counter initialValue={0}/>
           </div>

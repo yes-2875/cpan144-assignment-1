@@ -1,6 +1,50 @@
-.Counter {
+.Counter, .Status {
     padding: 2em;
+    width: 100%;
     border: 1px solid var(--text-secondary);
     border-radius: 1em;
-    color: var(--foreground) !important;
+    color: var(--text-primary) !important;
+    text-align: center;
+}
+
+.Status > * {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.Count {
+    font-size: 15cap;
+    font-weight: bold;
+    display: block;
+}
+
+.ButtonList {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-basis: 100px;
+    flex-grow: 1;
+    gap: 1em;
+}
+
+.CounterButton {
+    background-color: #1a1a1a;
+    border: 1px solid #4d4d4d;
+    border-radius: 0.5em;
+    width: 100%;
+    font-size: 36px;
+    
+    transition-property: background-color border;
+    transition-duration: 0.15s;
+}
+
+.CounterButton:hover {
+    background-color: #313131;
+    border: 1px solid #adadad;
+    cursor: pointer;
+}
+
+.CounterButton:active {
+    background-color: #575757;
+    border: 1px solid #fff;
 }
