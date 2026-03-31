@@ -18,9 +18,9 @@ export default function Navbar({children}) {
         <>
         <nav className={`${styles.Navbar} ${geistMono.variable} ${geistSans.variable}`}>
             
-            <Link href="/" className={styles.Link}>Homepage</Link>
-            <Link href="/ListItems" className={styles.Link}>List Items</Link>
-            
+            <Link href="/"            className={styles.Link}>Homepage</Link>
+            <Link href="/ListItems"   className={styles.Link}>List Items</Link>
+            <Link href="/CounterPage" className={styles.Link}>Counter</Link>
         </nav>
         {children}
         </>

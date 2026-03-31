@@ -26,7 +26,9 @@ export default function Home() {
         <main className={styles.main}>
           <div className={styles.intro}>
             <h1>Welcome!</h1>
-            <p>This is the homepage of the assignment.</p>
+            <p>This is the homepage of the assignment.<br></br>
+            <b>Check the navigation bar</b> up top to view the different pages,
+            components and React concepts applied within the assignment.</p>
           </div>
         </main>
       </div>

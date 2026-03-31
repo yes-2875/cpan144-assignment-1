@@ -1,0 +1,6 @@
+.Counter {
+    padding: 2em;
+    border: 1px solid var(--text-secondary);
+    border-radius: 1em;
+    color: var(--foreground) !important;
+}
