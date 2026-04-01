@@ -1,9 +1,15 @@
-import List from "@/components/List";
-import Head from "next/head";
-import { Geist, Geist_Mono } from "next/font/google";
+import List from "@/components/List"; // Imports List component to use in page
+import Head from "next/head"; // Used to inject metadata elements into the html <head> tag
+import { Geist, Geist_Mono } from "next/font/google"; // Loads necessary font libraries
+
+// Reuse Home CSS module for page styling. Primary page structure remains the same across all pages.
 import styles from "@/styles/Home.module.css";
+
+// JS array that only serves as data for list items (in {object form}).
+// Will be used as the initialValue prop in <List/> component
 import { ListData } from "@/components/ListData";
 
+// Grab Geist Sans and Geist Mono CSS modules from library functions to use as variables
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -15,6 +21,17 @@ const geistMono = Geist_Mono({
 });
 
 export default function ListItems() {
+  /*
+    
+    The Head component is imported from node_modules/next folder
+    It is used to inject metadata elements into the html <head> tag
+    such as title, meta, favicons, viewport scaling, etc.
+    
+    List component is declared with an initial value of ListData.
+    This prop will be used within the component's code to set up state for that variable.
+    That state will be used for a Details section showing more information about the selected list item.
+    
+  */
   return (
     <>
       <Head>

@@ -1,8 +1,8 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+import Head from "next/head"; // Used to inject metadata elements into the html <head> tag
+import { Geist, Geist_Mono } from "next/font/google"; // Loads necessary font libraries
+import styles from "@/styles/Home.module.css"; // Use Home CSS module for homepage styling.
 
+// Grab Geist Sans and Geist Mono CSS modules from library functions to use as variables
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -13,6 +13,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+/* This is the homepage of the assignment.
+It does not have any actual components, but
+it advises the user to explore the Navbar at the top
+to view the other pages and their components.
+
+(In case you're wondering, the Navbar is being
+supplied through @/pages/_app.js) */
 export default function Home() {
   return (
     <>

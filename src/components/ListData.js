@@ -1,3 +1,6 @@
+/* This is NOT a component and just exists as
+sample data to supplement the List component. */
+
 export const ListData = [
   {
     id: 0,
